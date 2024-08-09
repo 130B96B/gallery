@@ -322,15 +322,19 @@ footer{
             font-size: 2rem;
         }
     }
-    .gallery {
+    .gallary{
         margin-bottom: 280px;
         & .list{
             & li{
                 margin-bottom: 30px;
-                & li{
-                    & img{
-                        width: 100%;
-                    }
+                &:nth-child(odd){
+                    text-align: none;
+                }
+                &:nth-child(even){
+                    text-align: none;
+                }
+                & img{
+                    width: 100%;
                 }
             }
         }

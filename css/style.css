@@ -112,20 +112,20 @@ li {
   width: 33.33%;
   height: 100%;
   -o-object-fit: cover;
-    object-fit: cover;
+     object-fit: cover;
   flex-shrink: 0;
   transition: transform 0.3s ease-out;
 }
 .mainvisual img:nth-child(1) {
   -o-object-position: right center;
-    object-position: right center;
+     object-position: right center;
 }
 .mainvisual img:nth-child(2) {
   z-index: 2;
 }
 .mainvisual img:nth-child(3) {
   -o-object-position: left center;
-    object-position: left center;
+     object-position: left center;
 }
 
 h1 {
@@ -335,13 +335,19 @@ footer .copyright li:last-child {
   .information .place {
     font-size: 2rem;
   }
-  .gallery {
+  .gallary {
     margin-bottom: 280px;
   }
-  .gallery .list li {
+  .gallary .list li {
     margin-bottom: 30px;
   }
-  .gallery .list li li img {
+  .gallary .list li:nth-child(odd) {
+    text-align: none;
+  }
+  .gallary .list li:nth-child(even) {
+    text-align: none;
+  }
+  .gallary .list li img {
     width: 100%;
   }
   .access {
